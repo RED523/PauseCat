@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "喵休息",
+  "description": "在可配置的浏览时长后，用猫咪提醒你暂时休息，避免分心。",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "喵休息",
+    "default_popup": "options.html"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": ["alarms", "idle", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/cat.webm", "assets/cat.mp4", "assets/cat-side.mp4", "assets/cat_1.mp4", "assets/cat_3.webm", "assets/cat_8.mp4", "assets/cat_9.mp4"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

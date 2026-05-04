@@ -1,0 +1,237 @@
+:root {
+  color-scheme: light;
+  --bg: #f0fdfa;
+  --bg-soft: #ccfbf1;
+  --panel: rgba(255, 255, 255, 0.86);
+  --input: #ffffff;
+  --text: #134e4a;
+  --muted: #2c7a73;
+  --accent: #f97316;
+  --accent-hover: #ea580c;
+  --border: rgba(19, 78, 74, 0.15);
+  --shadow: 0 14px 34px rgba(13, 148, 136, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 390px;
+  min-height: 560px;
+  margin: 0;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(20, 184, 166, 0.16), transparent 38%),
+    radial-gradient(circle at 90% 92%, rgba(249, 115, 22, 0.14), transparent 32%),
+    linear-gradient(180deg, var(--bg), #ecfeff 100%);
+  color: var(--text);
+  font: 15px/1.45 "Plus Jakarta Sans", "Avenir Next", "PingFang SC", "Noto Sans SC", sans-serif;
+}
+
+.shell {
+  margin: 16px;
+  padding: 24px 22px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  background: var(--panel);
+  backdrop-filter: blur(6px);
+  box-shadow: var(--shadow);
+}
+
+.title {
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.eyebrow {
+  margin: 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(13, 148, 136, 0.13);
+  color: #0d9488;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.intro {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.settings {
+  display: grid;
+  gap: 20px;
+}
+
+.field {
+  display: grid;
+  gap: 10px;
+  color: #16645e;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+  background: var(--input);
+  color: var(--text);
+  font: inherit;
+  font-size: 18px;
+  padding: 10px 12px;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  border-color: rgba(13, 148, 136, 0.65);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.18);
+}
+
+.section {
+  display: grid;
+  gap: 12px;
+}
+
+h2 {
+  margin: 0;
+  color: #16645e;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.preset-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 18px;
+}
+
+.preset {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: #1d726b;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 7px 8px;
+  border-radius: 8px;
+  transition: background-color 180ms ease;
+}
+
+.preset:hover {
+  background: rgba(13, 148, 136, 0.08);
+}
+
+.preset input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.preset span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.domain-row {
+  display: grid;
+  grid-template-columns: 1fr 72px;
+  gap: 10px;
+}
+
+.small-button,
+.remove-domain {
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background-color 180ms ease;
+}
+
+.small-button:hover,
+.remove-domain:hover,
+.save-button:hover {
+  background: var(--accent-hover);
+}
+
+.custom-list {
+  display: grid;
+  gap: 8px;
+}
+
+.domain-pill {
+  display: grid;
+  grid-template-columns: 1fr 54px;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  color: #1d726b;
+}
+
+.domain-pill span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.remove-domain {
+  min-height: 36px;
+  font-size: 14px;
+}
+
+.save-button {
+  min-height: 50px;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 11px;
+  background: var(--accent);
+  color: white;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.save-button:active {
+  transform: translateY(1px);
+}
+
+.status {
+  min-height: 18px;
+  margin: -10px 0 0;
+  color: #0f766e;
+  text-align: left;
+  font-size: 13px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

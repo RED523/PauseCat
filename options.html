@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>喵休息</title>
+    <link rel="stylesheet" href="styles/options.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="title">
+        <h1>喵休息</h1>
+      </header>
+
+      <form id="settings-form" class="settings">
+        <label class="field">
+          <span>几分钟后猫咪出现？</span>
+          <input id="browseMinutes" name="browseMinutes" type="number" min="0.1" max="1440" step="0.1" inputmode="decimal">
+        </label>
+
+        <label class="field">
+          <span>休息时间（分钟）</span>
+          <input id="breakMinutes" name="breakMinutes" type="number" min="0.1" max="1440" step="0.1" inputmode="decimal">
+        </label>
+
+        <section class="section">
+          <h2>目标网站</h2>
+          <div id="preset-list" class="preset-grid"></div>
+        </section>
+
+        <section class="section">
+          <h2>自定义网站</h2>
+          <div class="domain-row">
+            <input id="custom-domain" type="text" autocomplete="off" spellcheck="false" placeholder="example.com">
+            <button id="add-domain" class="small-button" type="button">添加</button>
+          </div>
+          <div id="custom-list" class="custom-list"></div>
+        </section>
+
+        <button class="save-button" type="submit">保存</button>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <script src="scripts/options.js"></script>
+  </body>
+</html>
