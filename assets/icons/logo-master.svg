@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="PauseCat logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bg)"/>
+  <path d="M33 42 L44 28 L53 44" fill="none" stroke="#F0FDFA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M75 44 L84 28 L95 42" fill="none" stroke="#F0FDFA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M37 54 Q64 84 91 54" fill="none" stroke="#F0FDFA" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="52" cy="58" r="4" fill="#F0FDFA"/>
+  <circle cx="76" cy="58" r="4" fill="#F0FDFA"/>
+  <path d="M58 70 Q64 76 70 70" fill="none" stroke="#F0FDFA" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="95" cy="36" r="8" fill="#F97316"/>
+</svg>

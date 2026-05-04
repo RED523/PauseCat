@@ -1,10 +1,21 @@
 {
   "manifest_version": 3,
-  "name": "喵休息",
+  "name": "PauseCat",
   "description": "在可配置的浏览时长后，用猫咪提醒你暂时休息，避免分心。",
   "version": "0.1.0",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
   "action": {
-    "default_title": "喵休息",
+    "default_title": "PauseCat",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png",
+      "48": "assets/icons/icon-48.png"
+    },
     "default_popup": "options.html"
   },
   "background": {

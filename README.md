@@ -1,6 +1,6 @@
-# 喵休息
+# PauseCat
 
-喵休息是一个基于 Chrome Manifest V3 的扩展。在达到可配置的专注时长后，它会用全屏猫咪打断分心网站，提醒你短暂休息。
+PauseCat是一个基于 Chrome Manifest V3 的扩展。在达到可配置的专注时长后，它会用全屏猫咪打断分心网站，提醒你短暂休息。
 
 ## Install locally
 
@@ -23,3 +23,7 @@ Only the active tab in the focused Chrome window counts. Background tabs, non-ta
 ## Cat asset
 
 Place a licensed looping cat video at `assets/cat.webm` or `assets/cat.mp4`. The extension has a CSS animation fallback so the break flow remains testable before the final video is added.
+
+## App icon
+
+Extension icons are in `assets/icons/` with PNG sizes `16`, `32`, `48`, and `128`, using the "geometric cat face" brand style.
