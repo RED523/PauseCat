@@ -37,3 +37,14 @@ Place a licensed looping cat video at `assets/cat.webm` or `assets/cat.mp4`. The
 ## App Icon
 
 Extension icons are in `assets/icons/` with PNG sizes `16`, `32`, `48`, and `128`, using the "geometric cat face" brand style.
+
+## Contributing
+
+Contributions of all kinds are welcome:
+
+- Clone the project and try it locally
+- Open an Issue to report bugs or share suggestions
+- Submit a PR to improve features or documentation
+- Give the project a Star to support ongoing maintenance
+
+If this project helps you, please consider giving it a Star. Your support motivates me to keep improving it.
