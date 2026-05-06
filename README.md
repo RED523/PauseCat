@@ -14,4 +14,4 @@ A Chrome extension that interrupts distracting websites with a full-screen cat a
 
 ### Demo Video
 
-<video src="./assets/showcase/IMG_0267.mp4" controls width="360"></video>
+[▶ Watch Demo Video](./assets/showcase/IMG_0267.mp4)
