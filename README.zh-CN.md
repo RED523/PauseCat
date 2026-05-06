@@ -6,10 +6,18 @@ PauseCat 是一个基于 Chrome Manifest V3 的扩展。在达到可配置的专
 
 ## 本地安装
 
-1. 打开 `chrome://extensions`。
-2. 开启 **Developer mode（开发者模式）**。
-3. 点击 **Load unpacked（加载已解压的扩展程序）**。
-4. 选择此目录：`/Users/zzm/development/self/cat`。
+1. 拉取代码到本地：
+
+   ```bash
+   git clone https://github.com/RED523/PauseCat.git
+   ```
+
+   也可以在 GitHub 页面点击 **Code** -> **Download ZIP**，下载后解压。
+2. 打开 Chrome，进入 `chrome://extensions`。
+3. 开启右上角的 **Developer mode（开发者模式）**。
+4. 点击 **Load unpacked（加载已解压的扩展程序）**。
+5. 选择刚刚拉取或解压后的 `PauseCat` 文件夹。
+6. 安装完成后，点击 Chrome 工具栏中的 PauseCat 图标进行设置。
 
 ## 设置
 

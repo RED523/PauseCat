@@ -6,10 +6,18 @@ PauseCat is a Chrome Manifest V3 extension. After a configurable focus duration,
 
 ## Install Locally
 
-1. Open `chrome://extensions`.
-2. Enable **Developer mode**.
-3. Click **Load unpacked**.
-4. Select this folder: `/Users/zzm/development/self/cat`.
+1. Clone the repository locally:
+
+   ```bash
+   git clone https://github.com/RED523/PauseCat.git
+   ```
+
+   You can also click **Code** -> **Download ZIP** on GitHub, then unzip the downloaded file.
+2. Open Chrome and go to `chrome://extensions`.
+3. Enable **Developer mode** in the top-right corner.
+4. Click **Load unpacked**.
+5. Select the `PauseCat` folder you cloned or unzipped.
+6. After installation, click the PauseCat icon in the Chrome toolbar to configure it.
 
 ## Settings
 
